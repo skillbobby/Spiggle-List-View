@@ -30,7 +30,7 @@ The package is not on Packagist yet. Add the GitHub repository, then require it:
 
 ```bash
 composer config repositories.spiggle-list-view vcs https://github.com/skillbobby/Spiggle-List-View.git
-composer require spiggle/list-view
+composer require spiggle/list-view:^1.0
 ```
 
 Register the plugin on your Filament panel:
