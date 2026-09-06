@@ -1,0 +1,95 @@
+.slv-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.1rem;
+    border: 1px solid var(--smt-border, rgba(230, 225, 229, 0.12));
+    border-radius: 999px;
+    padding: 0.15rem;
+    background: var(--smt-elevated, rgba(255,255,255,.04));
+    margin-inline-start: 0.35rem;
+}
+.slv-toggle-btn {
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    color: var(--smt-muted, #94a3b8);
+    cursor: pointer;
+}
+.slv-toggle-btn.is-active {
+    background: var(--smt-blue, #2563eb);
+    color: #fff;
+}
+.slv-toggle-btn:hover:not(.is-active) {
+    background: rgba(255,255,255,.06);
+    color: var(--smt-text, #fff);
+}
+.slv-avatar {
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: 999px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: var(--smt-elevated, rgba(255,255,255,.06));
+    display: inline-flex;
+}
+.slv-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+html.fi .fi-ta.slv-is-list .fi-ta-header-toolbar {
+    border-bottom: 1px solid var(--smt-border, rgba(230, 225, 229, 0.12));
+}
+html.fi .fi-ta.slv-is-list thead,
+html.fi .fi-ta.slv-is-list .fi-ta-header,
+html.fi .fi-ta.slv-is-list .fi-ta-content-header,
+html.fi .fi-ta.slv-is-list .fi-ta-selection-cell,
+html.fi .fi-ta.slv-is-list .fi-ta-selection-cell-header,
+html.fi .fi-ta.slv-is-list .fi-ta-group-selection-cell,
+html.fi .fi-ta.slv-is-list .fi-ta-group-checkbox,
+html.fi .fi-ta.slv-is-list td:has(.fi-checkbox-input),
+html.fi .fi-ta.slv-is-list th:has(.fi-checkbox-input) {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+html.fi .fi-ta.slv-is-list .fi-ta-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0.55rem 0.75rem 0.2rem;
+}
+html.fi .fi-ta.slv-is-list .fi-ta-group-heading {
+    display: grid;
+    place-items: center;
+    width: 2.15rem;
+    height: 2.15rem;
+    margin: 0;
+    border-radius: 999px;
+    background: var(--smt-blue, #2563eb);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+html.fi .fi-ta.slv-is-list .fi-ta-row {
+    background: transparent !important;
+}
+html.fi .fi-ta.slv-is-list .fi-ta-cell {
+    padding-block: 0.45rem;
+}
+html.fi .fi-ta.slv-is-list .fi-ta-split {
+    align-items: center;
+    gap: 0.75rem;
+}

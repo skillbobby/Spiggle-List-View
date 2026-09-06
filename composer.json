@@ -1,0 +1,36 @@
+{
+    "name": "spiggle/list-view",
+    "description": "Toggle Filament tables between table and alphabetical list views.",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "keywords": ["laravel", "filament", "filament-plugin", "table", "list", "spiggle"],
+    "authors": [{"name": "Spiggle", "email": "dev@spiggle.local"}],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.7",
+        "illuminate/support": "^13.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spiggle\\ListView\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spiggle\\ListView\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spiggle\\ListView\\ListViewServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
