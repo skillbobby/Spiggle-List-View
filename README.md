@@ -20,9 +20,9 @@ Table view stays the default (the current Filament table). List view switches to
 
 ## Requirements
 
-- PHP 8.3+
-- Laravel 12 or 13
-- Filament 5.7+
+- PHP 8.2+
+- Laravel 11, 12, or 13
+- Filament 5.0+
 
 ## Install
 
