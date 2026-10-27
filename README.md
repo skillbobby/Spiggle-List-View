@@ -53,6 +53,8 @@ $panel
     ->plugin(ListViewPlugin::make());
 ```
 
+Laravel auto-discovers the package service provider. After the Composer require, registering `ListViewPlugin::make()` on the panel is the only application setup: the toggle is added to every table toolbar, and styles are included with the plugin, so there is no asset publish step.
+
 ## How it works
 
 1. A table / list control is injected at the end of every Filament table toolbar.
