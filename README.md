@@ -60,10 +60,10 @@ Laravel auto-discovers the package service provider. After the Composer require,
 1. A table / list control is injected at the end of every Filament table toolbar.
 2. **Table** is the default. The existing columns, filters, search, and pagination stay as they are.
 3. **List** rebuilds the current table as stacked rows:
-   - Title from `name`, `title`, `number`, or the first text column
-   - Subtitle from `email` or the next text column
-   - Colored initials when the record has no avatar
-   - Groups by first letter (A–Z)
+   - Title from `name`, `title`, `number`, or `email`, then the first visible text column
+   - Subtitle from `email`, `description`, or `subtitle` when that is not the title, otherwise the next visible text column
+   - Colored initials when the record has no `avatar`, `avatar_url`, or `image`
+   - Groups by the first letter of the title (A–Z); titles that do not start with a letter are grouped under `#`
 4. The choice is stored in the session per Livewire table class, so each resource remembers its own mode.
 5. Clicking a list row uses the same `recordAction` / `recordUrl` as the table (slide-over, modal, or full page).
 
